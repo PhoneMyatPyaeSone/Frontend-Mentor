@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap');
+
+    body{
+      background-image: url('/images/pattern-background-desktop.svg');
+      background-repeat: no-repeat;
+      font-family: 'Red Hat Display', sans-serif;
+      box-sizing: border-box;
+    }    
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    .container{
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card{
+      width: 350px;
+      min-height: 450px;
+      border-radius: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #ffffff;
+      box-shadow: 6px 5px 62px 0px rgba(0,0,0,0.3);
+      -webkit-box-shadow: 6px 5px 62px 0px rgba(0,0,0,0.3);
+      -moz-box-shadow: 6px 5px 62px 0px rgba(0,0,0,0.3);
+    }
+
+    .card-header img{
+      width: 100%;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+    }
+
+    .card-body{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .card-body > p{
+      color: #00000050;
+      text-align: center;
+    }
+    .plan{
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      width: 80%;
+      background-color: hsl(225, 100%, 98%);
+      padding: 10px;
+      border-radius: 10px;
+      margin: 20px auto;
+    }
+
+    .plan-icon{
+      display: flex;
+      align-items: center;
+    }
+
+    .plan-icon img{
+      margin-right: 20px;
+    }
+
+    .plan-icon p,
+    .plan-icon h4{
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    .plan-icon > h4{
+      margin-block-start: 0 !important;
+    }
+    .btn{
+      width: 80%;
+      text-decoration: none;
+      text-align: center;
+    }
+    .payment{
+      background-color: hsl(245, 75%, 52%);
+      padding: 15px;
+      border-radius: 10px;   
+      color: #ffffff;   
+      margin: 15px auto;
+    }
+    .cancel{
+      color: hsl(224, 23%, 55%);
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="card">
+      <div class="card-header">
+        <img src="/images/illustration-hero.svg" alt="">
+      </div>
+      <div class="card-body">
+        <h2>Order Summary</h2>
+        <p>
+          You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!
+        </p>
+        <div class="plan">
+          <div class="plan-icon">
+            <img src="/images/icon-music.svg" alt="" width="40" height="40">
+            <div>
+              <h4 style="margin-bottom: 0;">Annual Plan</h4>
+              <p style="margin-top: 10px;">$59.99/year</p>
+            </div>
+          </div>
+          <a href="">Change</a>
+        </div>
+        <a href="" class="btn payment">
+          Proceed to Payment
+        </a>
+        <a href="" class="btn cancel">
+          Cancel Order
+        </a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>
+    Coded by <a href="https://github.com/PhoneMyatPyaeSone">Phone Myat Pyae Sone</a>
+  </div>
+</body>
+</html>
